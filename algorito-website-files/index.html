@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorito - Automate Now!</title>
+  <meta name="description" content="Servicios de automatización basados en IA para optimizar tus procesos de negocio">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html">
+        <img src="images/algorito-logo.png" alt="Algorito" class="logo">
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="casos-uso.html" class="nav-link">Casos de Uso</a></li>
+          <li><a href="demos.html" class="nav-link">Demos</a></li>
+          <li><a href="opiniones.html" class="nav-link">Opiniones</a></li>
+          <li><a href="agendar-llamada.html" class="nav-link">Agendar Llamada</a></li>
+          <li><a href="acerca-de.html" class="nav-link">Acerca de</a></li>
+          <li>
+            <div class="language-switcher">
+              <button class="language-btn active">🇪🇸 ES</button>
+              <button class="language-btn">🇬🇧 EN</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile Navigation -->
+      <div class="nav-mobile">
+        <button class="nav-toggle" id="navToggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Revoluciona tu Flujo de Trabajo con Automatización IA</h1>
+        <p class="hero-subtitle">Deja que Algorito se encargue de las tareas repetitivas mientras tú te enfocas en lo que realmente importa.</p>
+        <div class="hero-buttons">
+          <a href="servicios.html" class="btn btn-primary">Comenzar</a>
+          <a href="agendar-llamada.html" class="btn btn-outline">Agendar una Llamada Gratuita</a>
+        </div>
+      </div>
+      <img src="images/algorito-logo.png" alt="Algorito Robot" class="hero-image">
+    </div>
+  </section>
+  
+  <!-- Benefits Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Beneficios de la Automatización</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="benefits-grid">
+        <!-- Ahorro de Tiempo -->
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Ahorro de Tiempo</h3>
+          <p class="benefit-description">Reduce drásticamente el tiempo dedicado a tareas manuales y repetitivas.</p>
+        </div>
+        
+        <!-- Reducción de Errores -->
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Reducción de Errores</h3>
+          <p class="benefit-description">Minimiza los errores humanos y mejora la precisión de tus procesos.</p>
+        </div>
+        
+        <!-- Operaciones Optimizadas -->
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 10V3L4 14H7V21L16 10H13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-title">Operaciones Optimizadas</h3>
+          <p class="benefit-description">Simplifica y agiliza tus flujos de trabajo para una mayor eficiencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones de automatización personalizadas para tu negocio</p>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Automatización de Flujos de Trabajo -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Automatización de Flujos de Trabajo</h3>
+            <p class="service-description">Optimiza tus procesos utilizando Make.com y n8n para eliminar tareas repetitivas.</p>
+            <a href="servicios.html#workflow-automation" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Creación de Sitios Web con IA -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C13.6569 21 15 16.9706 15 12C15 7.02944 13.6569 3 12 3M12 21C10.3431 21 9 16.9706 9 12C9 7.02944 10.3431 3 12 3M3 12C3 7.02944 7.02944 3 12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Creación y Alojamiento de Sitios Web con IA</h3>
+            <p class="service-description">Desarrollo de sitios web modernos y responsivos impulsados por IA.</p>
+            <a href="servicios.html#website-building" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Integración de Chatbots -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 10H8.01M12 10H12.01M16 10H16.01M9 16H5C3.89543 16 3 15.1046 3 14V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V14C21 15.1046 20.1046 16 19 16H14L9 21V16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Integración de Chatbots Personalizados</h3>
+            <p class="service-description">Chatbots inteligentes que mejoran la experiencia del cliente y automatizan la atención.</p>
+            <a href="servicios.html#chatbot" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Automatización de CRM y Email -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Automatización de CRM y Email</h3>
+            <p class="service-description">Gestión automatizada de relaciones con clientes y campañas de email marketing.</p>
+            <a href="servicios.html#crm-email" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Sincronización de Datos e Informes -->
+        <div class="service-card">
+          <div class="service-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 17V15M12 17V13M15 17V11M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L18.7071 8.70711C18.8946 8.89464 19 9.149 19 9.41421V19C19 20.1046 18.1046 21 17 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Sincronización de Datos e Informes</h3>
+            <p class="service-description">Integración con Google Sheets y otras herramientas para mantener tus datos sincronizados.</p>
+            <a href="servicios.html#data-sync" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Use Cases Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Casos de Uso</h2>
+        <p>Descubre cómo nuestras soluciones de automatización mejoran los procesos empresariales</p>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="use-cases-grid">
+        <!-- E-commerce -->
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 11V7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7V11M5 9H19L20 21H4L5 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="use-case-content">
+            <h3 class="use-case-title">E-commerce</h3>
+            <p class="use-case-description">Automatización de inventario, procesamiento de pedidos y atención al cliente para tiendas online.</p>
+            <a href="casos-uso.html#ecommerce" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Agencias de Marketing -->
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 3.05493C6.50005 3.55238 3 7.36745 3 12C3 16.9706 7.02944 21 12 21C16.6326 21 20.4476 17.5 20.9451 13H11V3.05493Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.4878 9H15V3.5123C17.5572 4.41613 19.5839 6.44285 20.4878 9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="use-case-content">
+            <h3 class="use-case-title">Agencias de Marketing</h3>
+            <p class="use-case-description">Automatización de campañas, análisis de datos y generación de informes para agencias.</p>
+            <a href="casos-uso.html#marketing" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Servicios B2B -->
+        <div class="use-case-card">
+          <div class="use-case-image">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM21 10C21 11.1046 20.1046 12 19 12C17.8954 12 17 11.1046 17 10C17 8.89543 17.8954 8 19 8C20.1046 8 21 8.89543 21 10ZM7 10C7 11.1046 6.10457 12 5 12C3.89543 12 3 11.1046 3 10C3 8.89543 3.89543 8 5 8C6.10457 8 7 8.89543 7 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="use-case-content">
+            <h3 class="use-case-title">Servicios B2B</h3>
+            <p class="use-case-description">Gestión de clientes, facturación y seguimiento de proyectos para empresas de servicios.</p>
+            <a href="casos-uso.html#b2b" class="service-link">
+              Ver más
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Opiniones de Clientes</h2>
+        <p>Lo que dicen nuestros clientes sobre nosotros</p>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="testimonials-grid">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">"Gracias a Algorito he ahorrado 10 horas semanales en tareas repetitivas. Sus soluciones de automatización son increíblemente eficientes."</p>
+          <div class="testimonial-author">
+            <p class="author-name">María García</p>
+            <p class="author-company">Agencia de Marketing Digital</p>
+          </div>
+        </div>
+        
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">"La integración del chatbot personalizado ha mejorado significativamente nuestra atención al cliente, reduciendo el tiempo de respuesta en un 80%."</p>
+          <div class="testimonial-author">
+            <p class="author-name">Carlos Rodríguez</p>
+            <p class="author-company">E-commerce</p>
+          </div>
+        </div>
+        
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <p class="testimonial-text">"La automatización de nuestro CRM ha transformado nuestra gestión de clientes. El equipo de Algorito ofreció soluciones personalizadas que se adaptaron perfectamente a nuestras necesidades."</p>
+          <div class="testimonial-author">
+            <p class="author-name">Laura Martínez</p>
+            <p class="author-company">Consultoría B2B</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta-title">¿Listo para automatizar tus procesos?</h2>
+      <a href="agendar-llamada.html" class="cta-btn">Agendar una Llamada Gratuita</a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo y descripción -->
+        <div>
+          <img src="images/algorito-logo.png" alt="Algorito" class="footer-logo">
+          <p class="footer-description">Nuestra misión es simplificar tu trabajo a través de la automatización inteligente.</p>
+        </div>
+        
+        <!-- Enlaces rápidos -->
+        <div>
+          <h3 class="footer-heading">Inicio</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html">Inicio</a></li>
+            <li class="footer-link"><a href="servicios.html">Servicios</a></li>
+            <li class="footer-link"><a href="casos-uso.html">Casos de Uso</a></li>
+            <li class="footer-link"><a href="demos.html">Demos</a></li>
+          </ul>
+        </div>
+        
+        <!-- Más enlaces -->
+        <div>
+          <h3 class="footer-heading">Acerca de</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="opiniones.html">Opiniones</a></li>
+            <li class="footer-link"><a href="agendar-llamada.html">Agendar Llamada</a></li>
+            <li class="footer-link"><a href="acerca-de.html">Acerca de</a></li>
+            <li class="footer-link"><a href="terminos.html">Términos de Servicio</a></li>
+            <li class="footer-link"><a href="privacidad.html">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contacto -->
+        <div>
+          <h3 class="footer-heading">Contacto</h3>
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.657 16.657L13.414 20.9C13.039 21.2746 12.5306 21.4851 12 21.4851C11.4694 21.4851 10.961 21.2746 10.586 20.9L6.343 16.657C4.22422 14.5382 3.0001 11.6326 3.0001 8.58579C3.0001 5.53897 4.22422 2.63338 6.343 0.514719C8.46179 -1.60394 11.3674 -2.82806 14.4142 -2.82806C17.461 -2.82806 20.3666 -1.60394 22.4853 0.514719C24.604 2.63338 25.8281 5.53897 25.8281 8.58579C25.8281 11.6326 24.604 14.5382 22.4853 16.657H17.657ZM15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="contact-text">Ibiza, España</span>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="mailto:algorito-ai@gmail.com" class="contact-text">algorito-ai@gmail.com</a>
+          </div>
+          
+          <!-- Redes sociales -->
+          <div class="social-links">
+            <a href="https://linkedin.com/company/algorito" class="social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 7.035 20 12.241V19Z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/algorito" class="social-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.953 4.57C23.0545 4.9 22.105 5.1 21.115 5.21C22.1249 4.6 22.9 3.64 23.303 2.5C22.34 3.05 21.286 3.45 20.165 3.65C19.269 2.69 17.992 2.1 16.574 2.1C13.857 2.1 11.654 4.3 11.654 7.02C11.654 7.39 11.699 7.75 11.781 8.09C7.691 7.89 4.066 5.95 1.64 2.99C1.213 3.7 0.974 4.6 0.974 5.54C0.974 7.31 1.844 8.9 3.162 9.82C2.355 9.8 1.596 9.59 0.934 9.24V9.3C0.934 11.7 2.627 13.69 4.88 14.12C4.467 14.23 4.031 14.29 3.584 14.29C3.27 14.29 2.969 14.26 2.668 14.21C3.299 16.17 5.113 17.6 7.272 17.64C5.592 18.97 3.463 19.74 1.17 19.74C0.78 19.74 0.391 19.72 0 19.67C2.189 21.07 4.768 21.85 7.557 21.85C16.611 21.85 21.556 14.37 21.556 7.89C21.556 7.68 21.556 7.47 21.541 7.26C22.502 6.57 23.34 5.7 24.001 4.72L23.953 4.57Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Algorito. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
